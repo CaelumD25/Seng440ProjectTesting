@@ -16,4 +16,4 @@ jobs:
 
     # Run C tests
     - name: Run C tests
-      run: ./main_test
+      run: ./main_test.c
