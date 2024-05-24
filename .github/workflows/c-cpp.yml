@@ -21,6 +21,7 @@ jobs:
     # Run C tests
     - name: Run C tests
       run: | 
+      #!/bin/bash
       set -e
       
       if [ "$(./main)" == "235 128 128" ]; then 
