@@ -11,13 +11,13 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install ARM GCC toolchain
-      run: sudo apt-get install -y gcc-arm-linux-gnueabihf
+      run: sudo apt-get install -y gcc-arm-linux-gnueabihf cmake libcmocka-dev
 
     # Compile C program
     - name: Compile Tests
       run: |
-        gcc main.c main_tests.c -o main_test -lcmocka
+        gcc main.c main_tests.c -o main_tests -lcmocka
 
     # Run C tests
     - name: Run C tests
-      run: ./main_test
+      run: ./main_tests
