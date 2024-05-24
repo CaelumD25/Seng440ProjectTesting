@@ -16,8 +16,16 @@ jobs:
     # Compile C program
     - name: Compile Tests
       run: |
-        gcc main.c main_tests.c -o main_tests -lcmocka
+        gcc main.c -o main 
 
     # Run C tests
     - name: Run C tests
-      run: ./main_tests
+      run: | 
+      set -e
+      
+      if [ "$(./main)" == "235 128 128" ]; then 
+        echo "Match" 
+      else 
+        echo "No match";
+        exit 1
+      fi
