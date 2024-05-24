@@ -33,7 +33,7 @@ def run_and_time_binary(binary_path, expected_output):
 
 if __name__ == "__main__":
     binary_path = "./main"  # Path to the C binary
-    expected_output = " ".join(sys.argv)  # The expected output from the binary
+    expected_output = " ".join(sys.argv[1:])  # The expected output from the binary
 
     if run_and_time_binary(binary_path, expected_output):
         print("Test passed.")
