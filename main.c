@@ -35,6 +35,5 @@ int main()
     printf("Y: %u\n", Y);
     printf("Cb: %u\n", Cb);
     printf("Cr: %u\n", Cr);
-
     return 0;
 }

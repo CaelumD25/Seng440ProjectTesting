@@ -16,7 +16,7 @@ jobs:
     # Compile C program
     - name: Compile Tests
       run: |
-        gcc main.c main_test.c -o main_test -lcmocka
+        gcc main.c main_tests.c -o main_test -lcmocka
 
     # Run C tests
     - name: Run C tests
