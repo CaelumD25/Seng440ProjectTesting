@@ -1,13 +1,9 @@
-//
-// Created by caelu on 2024-05-23.
-//
 #include <stdarg.h>
 #include <stddef.h>
 #include <setjmp.h>
 #include <cmocka.h>
 #include <time.h>
-#include "main.c"
-
+#include "main.c" // Include your main source file
 
 // Test case
 static void test_white_conversion(void **state) {
