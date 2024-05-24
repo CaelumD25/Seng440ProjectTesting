@@ -19,14 +19,5 @@ jobs:
         gcc main.c -o main 
 
     # Run C tests
-    - name: Run C tests
-      run: | 
-      #!/bin/bash
-      set -e
-      
-      if [ "$(./main)" == "235 128 128" ]; then 
-        echo "Match" 
-      else 
-        echo "No match";
-        exit 1
-      fi
+    - name: Run C test 1
+      run: python3 ./tests/test1.py
