@@ -20,4 +20,4 @@ jobs:
 
     # Run C tests
     - name: Run C test 1
-      run: python3 ./tests/test1.py
+      run: python3 ./tests/test1.py 64 208 122
